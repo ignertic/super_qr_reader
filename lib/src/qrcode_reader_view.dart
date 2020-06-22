@@ -54,7 +54,7 @@ class QrcodeReaderViewState extends State<QrcodeReaderView>
         });
       } else {
         Navigator.of(context)
-            .pop('无权访问摄像头/No permissions to access the camera');
+            .pop('No permissions to access the camera');
       }
     });
   }
@@ -214,7 +214,7 @@ class QrcodeReaderViewState extends State<QrcodeReaderView>
                         style: TextStyle(color: Colors.white),
                         child: widget.helpWidget ??
                             Text(
-                              "请将二维码置于方框中 \n please place the code inside the frame",
+                              "Place the code inside the frame",
                               textAlign: TextAlign.center,
                             ),
                       ),
